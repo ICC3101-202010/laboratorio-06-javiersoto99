@@ -8,12 +8,15 @@ namespace Lab6
     {
         public string nombre;
         public Persona encargado;
+        public List<Persona> personal;
 
 
-        public Division(string nombre , Persona encargado)
+
+        public Division(string nombre , Persona encargado , List<Persona> personal)
         {
             this.nombre = nombre;
             this.encargado = encargado;
+            this.personal = personal;
         }
 
         

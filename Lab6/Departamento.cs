@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Lab6
 {
@@ -6,10 +7,11 @@ namespace Lab6
     public class Departamento : Division
     {
         
-        public Departamento(string nombre, Persona encargado) : base(nombre , encargado)
+        public Departamento(string nombre, Persona encargado, List<Persona> personal) : base(nombre , encargado,personal)
         {
             this.nombre = nombre;
             this.encargado = encargado;
+            this.personal = personal;
         }
     }
 }

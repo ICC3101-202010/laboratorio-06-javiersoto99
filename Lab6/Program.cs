@@ -47,45 +47,58 @@ namespace Lab6
 
                             //AREA
                             Persona encargadoArea2 = new Persona("Cristiano", "Ronaldo", "20.074.782-8", "Engargado Area");
-                            Area area2 = new Area("Area", encargadoArea2);
+                            Area area2 = new Area("Area", encargadoArea2 , null);
                             divisiones2.Add(area2);
 
                             //DEPARTAMENTO
                             Persona encargadoDepa2 = new Persona("Lionel", "Messi", "23.204.345-5", "Encargado Departamento");
-                            Departamento departamento2 = new Departamento("Departamento", encargadoDepa2);
+                            Departamento departamento2 = new Departamento("Departamento", encargadoDepa2 , null);
                             divisiones2.Add(departamento2);
 
                             //SECCION
                             Persona encargadoSec2 = new Persona("Elon", "Musk", "18.094.234-1", "Encargado Seccion");
-                            Seccion seccion2 = new Seccion("Seccion", encargadoSec2);
+                            Seccion seccion2 = new Seccion("Seccion", encargadoSec2,null);
                             divisiones2.Add(seccion2);
 
                             //BLOQUE1
-                            Persona encargadoB1 = new Persona("Humberto", "Suazo", "15.657.778-2", "Encargado Bloque 1");
-                            //Persona personal1B1 = new Persona("Juan", "Perez", "17.232.688-6", "Personal 1 ");
-                            //Persona personal2B1 = new Persona("Diego", "Soto", "17.343.777-2", "Personal 2 ");
-                            //Persona personal3B1 = new Persona("Pablo", "Poblete", "10.666.448-3", "Personal 3");
-                            //Persona personal4B1 = new Persona("Sofia", "Alcalde", "20.074.788-9", "Personal 4");
-                            //Persona personal5B1 = new Persona("Javier", "Coll", "19.346.448-8", "Personal 5");
 
-                            Bloque bloque1 = new Bloque("Bloque 1", encargadoB1);
+                            List<Persona> personalB1 = new List<Persona>();
+                            Persona encargadoB1 = new Persona("Humberto", "Suazo", "15.657.778-2", "Encargado Bloque 1");
+                            Persona personal1B1 = new Persona("Juan", "Perez", "17.232.688-6", "Personal 1 ");
+                            Persona personal2B1 = new Persona("Diego", "Soto", "17.343.777-2", "Personal 2 ");
+                            Persona personal3B1 = new Persona("Pablo", "Poblete", "10.666.448-3", "Personal 3");
+                            Persona personal4B1 = new Persona("Sofia", "Alcalde", "20.074.788-9", "Personal 4");
+                            Persona personal5B1 = new Persona("Javier", "Coll", "19.346.448-8", "Personal 5");
+                            personalB1.Add(personal1B1);
+                            personalB1.Add(personal2B1);
+                            personalB1.Add(personal3B1);
+                            personalB1.Add(personal4B1);
+                            personalB1.Add(personal5B1);
+
+                            Bloque bloque1 = new Bloque("Bloque 1", encargadoB1 , personalB1);
                             divisiones2.Add(bloque1);
 
                             //BLOQUE2
                             Persona encargadoB2 = new Persona("Alexis", "Sanchez", "18.343.566-7", "Encargado Bloque 2");
-                            //Persona personal1B1 = new Persona("Juan", "Perez", "17.232.688-6", "Personal 1 ");
-                            //Persona personal2B1 = new Persona("Diego", "Soto", "17.343.777-2", "Personal 2 ");
-                            //Persona personal3B1 = new Persona("Pablo", "Poblete", "10.666.448-3", "Personal 3");
-                            //Persona personal4B1 = new Persona("Sofia", "Alcalde", "20.074.788-9", "Personal 4");
-                            //Persona personal5B1 = new Persona("Javier", "Coll", "19.346.448-8", "Personal 5");
+                            List<Persona> personalB2 = new List<Persona>();
+                            Persona personal1B2 = new Persona("Vicente", "Perez", "20.999.688-6", "Personal 1 ");
+                            Persona personal2B2 = new Persona("Rodrigo", "Olguin", "23.455.788-K", "Personal 2 ");
+                            Persona personal3B2 = new Persona("Nicolas", "Valencia", "24.666.666-5", "Personal 3");
+                            Persona personal4B2 = new Persona("Emilia", "Segura", "22.899.056-9", "Personal 4");
+                            Persona personal5B2 = new Persona("Vicente", "Poblete", "20.346.448-8", "Personal 5");
+                            personalB2.Add(personal1B2);
+                            personalB2.Add(personal2B2);
+                            personalB2.Add(personal3B2);
+                            personalB2.Add(personal4B2);
+                            personalB2.Add(personal5B2);
 
-                            Bloque bloque2 = new Bloque("Bloque 2", encargadoB2);
+                            Bloque bloque2 = new Bloque("Bloque 2", encargadoB2 , personalB2);
                             divisiones2.Add(bloque2);
 
                             Empresa empresa2 = new Empresa(nombreEmp2, RUTEmp2, divisiones2);
                             empresas.Add(empresa2);
                             Save(empresas);
-
+                            Console.WriteLine("Empresa creada correctamente");
 
 
 
@@ -121,7 +134,7 @@ namespace Lab6
 
                                 Persona encargadoArea = new Persona(nombreEA, apellidoEA, rutEA, "Encargado Area");
 
-                                Area area = new Area("Area",encargadoArea);
+                                Area area = new Area("Area",encargadoArea,null);
                                 divisiones.Add(area);
                                 break;
                             case "n":
@@ -148,7 +161,7 @@ namespace Lab6
 
                                 Persona encargadoDepa = new Persona(nombreED, apellidoED, rutED, "Encargado Departamento");
 
-                                Departamento departamento = new Departamento("Departamento", encargadoDepa);
+                                Departamento departamento = new Departamento("Departamento", encargadoDepa,null);
                                 divisiones.Add(departamento);
                                 break;
                             case "n":
@@ -175,7 +188,7 @@ namespace Lab6
 
                                 Persona encargadoSec = new Persona(nombreES, apellidoES, rutES, "Encargado Seccion");
 
-                                Seccion seccion = new Seccion("Seccion", encargadoSec);
+                                Seccion seccion = new Seccion("Seccion", encargadoSec,null);
                                 divisiones.Add(seccion);
                                 break;
                             case "n":
@@ -193,17 +206,42 @@ namespace Lab6
                         switch (elec4)
                         {
                             case "s":
-                                Console.WriteLine("Ingrese Nombre del encargado del Bloque: ");
-                                string nombreEB = Console.ReadLine();
-                                Console.WriteLine("Ingrese Apellido del encargado del Bloque: ");
-                                string apellidoEB = Console.ReadLine();
-                                Console.WriteLine("Ingrese RUT del encargado del Bloque: ");
-                                string rutEB = Console.ReadLine();
+                                int cantb = 0;
+                                Console.WriteLine("Cuantos Bloques desdea agregar?");
+                                cantb = Convert.ToInt32(Console.ReadLine());
 
-                                Persona encargadoBloq = new Persona(nombreEB, apellidoEB, rutEB, "Encargado Bloque");
+                                for(int i = 0; i < cantb; i++)
+                                {
+                                    List<Persona> personalBloq = new List<Persona>();
+                                    Console.WriteLine("Ingrese Nombre del encargado del Bloque " + (i + 1) +" : ");
+                                    string nombreEB = Console.ReadLine();
+                                    Console.WriteLine("Ingrese Apellido del encargado del Bloque " + (i + 1) + " : ");
+                                    string apellidoEB = Console.ReadLine();
+                                    Console.WriteLine("Ingrese RUT del encargado del Bloque " + (i + 1) + " : ");
+                                    string rutEB = Console.ReadLine();
+                                    Persona encargadoBloq = new Persona(nombreEB, apellidoEB, rutEB, "Encargado Bloque" + (i + 1));
 
-                                Bloque bloque = new Bloque("Bloque", encargadoBloq);
-                                divisiones.Add(bloque);
+                                    Console.WriteLine("");
+                                    Console.WriteLine("Cuanto personal desea agregar? ");
+                                    int cantp = Convert.ToInt32(Console.ReadLine());
+                                    for(int j = 0; j < cantp; j++)
+                                    {
+                                        Console.WriteLine("Ingrese nombre del Personal "+(j+1)+" : ");
+                                        string nombrePer = Console.ReadLine();
+                                        Console.WriteLine("Ingrese apellido del Personal " + (j + 1) + " : ");
+                                        string apellidoPer = Console.ReadLine();
+                                        Console.WriteLine("Ingrese RUT del Personal " + (j + 1) + " : ");
+                                        string rutPer = Console.ReadLine();
+                                        Persona personalB = new Persona(nombrePer, apellidoPer, rutPer, "Personal" + (j+1));
+                                        personalBloq.Add(personalB);
+                                    }
+
+                                    
+
+                                    Bloque bloque = new Bloque("Bloque" + (i + 1), encargadoBloq , personalBloq);
+                                    divisiones.Add(bloque);
+                                }
+                                
                                 break;
                             case "n":
                                 break;
@@ -211,6 +249,8 @@ namespace Lab6
                                 Console.WriteLine("Opción no valida");
                                 break;
                         }
+
+                        Console.WriteLine("Empresa creada correctamente");
                         Empresa empresa = new Empresa(nombreEmp, RUTEmp, divisiones);
                         empresas.Add(empresa);
                         Save(empresas);
@@ -252,12 +292,23 @@ namespace Lab6
                     Console.WriteLine("Division: " + division.nombre);
                     Console.WriteLine("");
                     Console.WriteLine(division.encargado.cargo + " : " );
-                    Console.WriteLine(division.encargado.nombre);
-                    Console.WriteLine(division.encargado.apellido);
-                    Console.WriteLine(division.encargado.RUT);
+                    Console.WriteLine(division.encargado.nombre + " " + division.encargado.apellido + " " + division.encargado.RUT);
                     Console.WriteLine("");
                     Console.WriteLine("");
+                    if(division.personal != null)
+                    {
+                        Console.WriteLine("Personal "+division.nombre + " : ");
+                        foreach (Persona personal in division.personal)
+                        {
+                            Console.WriteLine(personal.nombre + " " + personal.apellido + " " + personal.RUT);
+                        }
+                    }
+                    
+                    Console.WriteLine("");
+                    Console.WriteLine("");
+                    
                 }
+               
                 Console.WriteLine("");
                 Console.WriteLine("--------------------------------------");
 
