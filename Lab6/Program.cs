@@ -234,6 +234,7 @@ namespace Lab6
                                         string rutPer = Console.ReadLine();
                                         Persona personalB = new Persona(nombrePer, apellidoPer, rutPer, "Personal" + (j+1));
                                         personalBloq.Add(personalB);
+                                        Console.WriteLine("");
                                     }
 
                                     
@@ -249,7 +250,7 @@ namespace Lab6
                                 Console.WriteLine("Opción no valida");
                                 break;
                         }
-
+                        Console.WriteLine("");
                         Console.WriteLine("Empresa creada correctamente");
                         Empresa empresa = new Empresa(nombreEmp, RUTEmp, divisiones);
                         empresas.Add(empresa);
