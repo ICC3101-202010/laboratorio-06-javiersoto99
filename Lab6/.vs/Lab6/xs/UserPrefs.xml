@@ -1,21 +1,28 @@
 ﻿<Properties StartupConfiguration="{DA86780A-3898-445A-AD84-67E33D0343FE}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Area.cs">
     <Files>
-      <File FileName="Program.cs" Line="9" Column="43" />
+      <File FileName="Program.cs" Line="65" Column="33" />
+      <File FileName="Empresa.cs" Line="11" Column="7" />
+      <File FileName="Division.cs" Line="23" Column="1" />
+      <File FileName="Persona.cs" Line="15" Column="32" />
+      <File FileName="Area.cs" Line="5" Column="1" />
+      <File FileName="Bloque.cs" Line="1" Column="1" />
+      <File FileName="Departamento.cs" Line="1" Column="1" />
+      <File FileName="Seccion.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Lab6" expanded="True">
             <Node name="Lab6" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="Area.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Lab6 FirstBuild="True" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Lab6 PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|anycpu" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

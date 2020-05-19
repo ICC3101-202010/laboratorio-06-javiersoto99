@@ -1,0 +1,5 @@
+/Users/javier/Desktop/laboratorio-06-javiersoto99/Lab6/bin/Debug/Lab6.exe
+/Users/javier/Desktop/laboratorio-06-javiersoto99/Lab6/bin/Debug/Lab6.pdb
+/Users/javier/Desktop/laboratorio-06-javiersoto99/Lab6/obj/Debug/Lab6.csprojAssemblyReference.cache
+/Users/javier/Desktop/laboratorio-06-javiersoto99/Lab6/obj/Debug/Lab6.exe
+/Users/javier/Desktop/laboratorio-06-javiersoto99/Lab6/obj/Debug/Lab6.pdb
