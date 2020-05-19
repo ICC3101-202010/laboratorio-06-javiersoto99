@@ -201,7 +201,7 @@ namespace Lab6
                         // BLOQUE
                         Console.Clear();
                         string elec4 = "";
-                        Console.WriteLine("Desea Agregar una BLOQUE? (s/n)");
+                        Console.WriteLine("Desea Agregar BLOQUES? (s/n)");
                         elec4 = Console.ReadLine();
                         switch (elec4)
                         {
